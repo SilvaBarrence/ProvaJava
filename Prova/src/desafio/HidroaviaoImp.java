@@ -1,8 +1,6 @@
-package desafio.service;
+package desafio;
 
-import desafio.repository.HidroaviaoRepository;
-
-public abstract class HidroaviaoImp implements HidroaviaoRepository {
+public abstract class HidroaviaoImp implements Hidroaviao {
 
 	private Boolean ligado;
 	private Boolean voando;

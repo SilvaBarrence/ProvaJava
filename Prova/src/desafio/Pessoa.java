@@ -1,4 +1,9 @@
-package desafio.models;
+package desafio;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 
 public class Pessoa {
 
@@ -12,6 +17,17 @@ public class Pessoa {
 		this.sobrenome = sobrenome;
 		this.dataNac = dataNac;
 		this.telefone = telefone;
+	}
+
+	public static List<String> ordenaNome(Map<Integer, Pessoa> pessoa) {
+		 List<String> nomes = new ArrayList<>();
+			int i = 0;
+			for (Object value : pessoa.values()) {
+				nomes.add(pessoa.get(i + 1).getNome());
+				i++;
+			}
+			Collections.sort(nomes);
+			return nomes;
 	}
 
 	@Override

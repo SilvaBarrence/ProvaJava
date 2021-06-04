@@ -1,6 +1,7 @@
-package desafio.repository;
+package desafio;
 
-public interface HidroaviaoRepository {
+
+public interface Hidroaviao {
 
 	public abstract void ligar();
 
